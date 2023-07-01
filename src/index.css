@@ -24,8 +24,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  
+  margin: 10px;
+  background-color: rgb(97, 134, 134);
   min-height: 100vh;
 }
 
@@ -71,7 +71,30 @@ button:focus-visible {
   justify-content: center;
   margin-bottom: 40px;
 }
-
+.view-buttons button:nth-child(1){
+  border-radius: 6px 0 0 6px ;
+}
+.view-buttons button:nth-child(2){
+ border-radius: 0 6px 6px 0
+}
 .active {
   background-color: #646cff;
+}
+
+/*header*/
+
+header{
+
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+
+header img {
+  width: 180px;
+}
+
+.leaflet-container{
+  width: 100%;
+  height: 80vh;
 }

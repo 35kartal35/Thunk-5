@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ListView from './components/ListView'
 import MapView from './components/MapView'
+import Header from './components/Header'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <>
+      <Header/>
       <div className='view-buttons'>
         <button className={`${showMapView && 'active'}`}
         onClick={()=>setShowMapView(true)}>
