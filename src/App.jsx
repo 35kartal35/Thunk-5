@@ -2,10 +2,19 @@ import { useState } from 'react'
 import ListView from './components/ListView'
 import MapView from './components/MapView'
 import Header from './components/Header'
-
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { getFlightData } from './redux/flightSlice'
 
 function App() {
-  const [showMapView, setShowMapView] = useState(true)
+  const [showMapView, setShowMapView] = useState(true) 
+  const dispatch = useDispatch() 
+
+  useEffect(()=>{
+
+    //veri çek ve stora aktar
+    dispatch(getFlightData());
+  }, [])
 
   return (
     <>

@@ -24,7 +24,7 @@ a:hover {
 }
 
 body {
-  margin: 10px;
+  margin: 0;
   background-color: rgb(97, 134, 134);
   min-height: 100vh;
 }
