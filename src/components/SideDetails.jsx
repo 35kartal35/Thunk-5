@@ -5,6 +5,7 @@ const SideDetails = ({detailId, setShowDetails}) => {
     const [details, setDetails] = useState(null)
 
     useEffect(()=>{
+        setDetails(null);
 
         // istek atarken kullandığımız ayarları tanımlama
         const options = {
@@ -22,17 +23,31 @@ const SideDetails = ({detailId, setShowDetails}) => {
 
     console.log(details)
   return (
-    <>
+
     <div className="detail">
         <div className="detail-inner">
         <p className="close-icon">
-            <span onClick={()=>{setShowDetails(false)}}>X</span>
+            <span onClick={()=>{setShowDetails(false)}}>
+                X
+                </span>
         </p>
-        {detailId}
-            <h2>Uçak Detay Bilgisi</h2>
+        {!details ? (<p>Loading</p>) : 
+        (
+        <>
+        <h2>{details?.aircraft?.model?.text}</h2>
+        <p>{details.aircraft.model.code}</p>
+        <img src={details.aircraft.images.large[0].src}/>
+        <p>Şirket: {details.airline.short}</p>
+        <h3>{details.airport.origin.name}</h3>
+        
+        </>
+        ) 
+        
+        }
+            
         </div>
     </div>
-    </>
+    
   )
 }
 

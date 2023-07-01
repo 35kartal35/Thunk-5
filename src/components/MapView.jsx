@@ -33,7 +33,7 @@ const MapView = () => {
     
   return (
     <div>
-      <h3>Harita Görünümü</h3>
+      <h3>{state.flights.length} Uçak Bulundu</h3>
      <MapContainer 
      center={[39.0919307,34.1120601]} 
      zoom={7} 
