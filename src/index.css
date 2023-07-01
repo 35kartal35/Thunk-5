@@ -25,9 +25,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  
   min-height: 100vh;
 }
 
@@ -66,4 +64,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+/*butonlar kısmı*/
+.view-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.active {
+  background-color: #646cff;
 }

@@ -9,10 +9,17 @@ function App() {
   return (
     <>
       <div className='view-buttons'>
-        <button onClick={()=>setShowMapView(true)}>Harita Görünümü</button>
-        <button onClick={()=>setShowMapView(false)}>Liste Görünümü</button>
+        <button className={`${showMapView && 'active'}`}
+        onClick={()=>setShowMapView(true)}>
+          Harita Görünümü
+          </button>
+        <button className={`${!showMapView && 'active'}`}
+        onClick={()=>setShowMapView(false)}>
+          Liste Görünümü
+          </button>
 
       </div>
+      {/* hangi birleşeni göstereceğimize karar veriyoruz*/}
       {showMapView ? <MapView/>  : <ListView/>}
     </>
   )
