@@ -30,5 +30,8 @@
   }
   ]
   -- uçaklar dizisi içerisindeki dizilerin enlem boylam id kuyrukkodu değerlerini al ve bu değerlerle bir obje oluştur.(map ile)
-- store da tutulan uçuşlar(plane) herbir obje için ekrana bir tane imleç bas
+- `MapView.jsx` sayfasında store da tutulan uçuşlar(plane) herbir obje için ekrana bir tane imleç bas
 - marker a position olarak obje içerisindeki lat ve lng değerlerini ver.
+- haritanın merkezini Ankara yap.
+- Popup içerisindeki Detay butonuna tıklanınca ``SideDetail.jsx` bileşenini ekrana bas ve bileşen hangi detayı gösterilecekse onu aktar.
+- Prop olarak gelen uçağın id değerlerini al ve bununla beraber api ye istek at..
