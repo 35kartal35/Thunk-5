@@ -5,7 +5,7 @@
 -react-redux
 -@reduxjs/toolkit
 -axios
--thunk (toolkitin yanında gelicek)
+-thunk (toolkitin yanında otomatik geliyor.)
 
 # Kaynaklar
 
