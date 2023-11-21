@@ -35,4 +35,6 @@
 - haritanın merkezini Ankara yap.
 - Popup içerisindeki Detay butonuna tıklanınca ``SideDetail.jsx` bileşenini ekrana bas ve bileşen hangi detayı gösterilecekse onu aktar.
 - Prop olarak gelen uçağın id değerlerini al ve bununla beraber api ye istek at..
-- `ListView.jsx` içerisinde uçuşları tablo halinde listele
+- `ListView.jsx` içerisinde uçuşları tablo halinde listele..
+
+- Okuyup istifade eden herkese teşekkür ederim.
